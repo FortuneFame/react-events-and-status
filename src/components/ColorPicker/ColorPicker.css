@@ -2,6 +2,8 @@
     width: 400px;
     padding: 10px;
     border: 1px solid black;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 .ColorPicker__title {

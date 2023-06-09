@@ -1,25 +1,18 @@
-.Dropdown {
-    position: relative;
-    width: 50%;
+.TodoList {
+    width: 600px;
+    margin: auto;
+}
+
+.TodoList__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
     border: 1px solid black;
-    margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
-.Dropdown__menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 92%;
-    padding: 20px;
-    text-align: center;
-    background-color: teal;
-    color: white;
-    margin: auto;
-}
-
-.Dropdown>button {
+.TodoList__item>button{
     border: none;
     padding: 10px 15px;
     background-color: teal;
@@ -32,4 +25,10 @@
     outline: none;
     box-shadow: 1px 2px 2px 0 rgb(0 0 0 / 0.5);
     transition: box-shadow 250ms linear;
+}
+
+.TodoList__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
 }
