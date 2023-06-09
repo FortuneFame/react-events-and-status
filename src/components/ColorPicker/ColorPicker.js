@@ -21,13 +21,13 @@ class ColorPicker extends Component {
             <div className="ColorPicker">
                 <h2 className="ColorPicker__title">Color Picker</h2>
                 <div>
-                    {this.props.options.map(({ lable, color }, index) => {
+                    {this.props.options.map(({ label, color }, index) => {
 
                         const optionClassName = this.makeOptionClassName(index)
                        
                         return (
                             <button
-                                key={lable}
+                                key={label}
                                 className={optionClassName}
                                 style={{
                                     backgroundColor: color,
