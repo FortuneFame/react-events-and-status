@@ -8,7 +8,7 @@
     margin-bottom: 50px;
 }
 
-.Counter__controls>button {
+.Counter__controls>button{
     border: none;
     padding: 10px 15px;
     background-color: teal;
