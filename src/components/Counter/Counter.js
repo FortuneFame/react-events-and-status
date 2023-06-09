@@ -3,19 +3,14 @@ import './Counter.css';
 
 class Counter extends React.Component {
     
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //         value: 0,
-    //     }
-    // }
-
     state = {
         value: 0,
     }
 
     handleIncrement = () => {
-
+        this.setState({
+            value : 10,
+        })
     };
 
     handleDecrement = () => {
