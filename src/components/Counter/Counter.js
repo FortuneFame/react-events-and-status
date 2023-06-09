@@ -2,21 +2,30 @@ import React from 'react';
 import './Counter.css';
 
 class Counter extends React.Component {
-    handleIncrement = event => {
-        console.log('+1');
-        console.log(event.target);
-        
+    
+    // constructor() {
+    //     super();
+    //     this.state = {
+    //         value: 0,
+    //     }
+    // }
+
+    state = {
+        value: 0,
+    }
+
+    handleIncrement = () => {
+
     };
 
-    handleDecrement = event => {
-        console.log('-1');
-        console.log(event.target);
+    handleDecrement = () => {
+
     };
 
     render() {
         return (
             <div className="Counter">
-                <span className="Counter__value">0</span>
+                <span className="Counter__value">{this.state.value}</span>
                 <div className="Counter__controls">
                     <button type="button" onClick={this.handleIncrement}>
                         Увеличить на 1
